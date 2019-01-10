@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vue Attribute Binding</h1>
+    <div id="app">
+        <div class="product">
+            <div class="product-image">
+                <!-- v-bind:src is same as :src -->
+                <img v-bind:src="image" :altText="altText" />
+            </div>
+            <div class="product-info">
+                <h2>{{ product }}</h2>
+                <a :href="link">To my site</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="script.js"></script>
+</body>
+</html>
